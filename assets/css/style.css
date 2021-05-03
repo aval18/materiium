@@ -193,11 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-}
-
-.logo h1 a, .logo h1 a:hover {
-  color: black;
-  text-decoration: none;
+  color: black
 }
 
  .logo img {
@@ -236,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
@@ -259,7 +255,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 0;
   height: 2px;
   bottom: 3px;
-  left: 30px;
   background-color: #6B705C;
   visibility: hidden;
   width: 0px;
@@ -344,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: black;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -381,29 +376,23 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 8px;
+  width: 100%;
+  top: 60px;
+  padding-top: 60px;
+  bottom: 0;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
 }
 
-.navbar-mobile > ul > li > a:before {
-  left: 20px;
-}
-
 .navbar-mobile a {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 1.2rem;
   color: #6B705C;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #ececec;
+  color: #6B705C;
 }
 
 .navbar-mobile .getstarted {
