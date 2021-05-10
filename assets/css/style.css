@@ -1226,32 +1226,49 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Brand
+--------------------------------------------------------------*/
+.brand .row{
+  justify-content: space-around;
+}
+
+.brand .member .pic img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  object-position: top;
+}
+.brand .member span {
+  padding: 1rem;
+}
+
+/*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team {
   background: #fff;
 }
 
-.team .member {
+.member {
   text-align: center;
   margin-bottom: 80px;
   position: relative;
 }
 
-.team .member .pic {
+.member .pic {
   border-radius: 4px;
   overflow: hidden;
 }
 
-.team .member img {
+.member img {
   transition: all ease-in-out 0.4s;
 }
 
-.team .member:hover img {
+.member:hover img {
   transform: scale(1.1);
 }
 
-.team .member .member-info {
+.member .member-info {
   position: absolute;
   bottom: -80px;
   left: 0px;
@@ -1262,7 +1279,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.team .member h4 {
+.member h4 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
@@ -1271,7 +1288,7 @@ section {
   padding-bottom: 10px;
 }
 
-.team .member h4::after {
+.member h4::after {
   content: '';
   position: absolute;
   display: block;
@@ -1282,7 +1299,7 @@ section {
   left: calc(50% - 25px);
 }
 
-.team .member span {
+.member span {
   font-style: italic;
   display: block;
   font-size: 13px;
