@@ -558,6 +558,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero .row {
     justify-content: center;
   }
+  .parallax {
+    background-attachment: scroll;
+  }
 
 }
 
@@ -672,7 +675,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 575px) {
-
   .hero-waves {
     margin-top: 30px;
   }
@@ -723,6 +725,12 @@ section {
   text-transform: uppercase;
   font-family: "Playfair Display", sans-serif;
   color: black;
+}
+
+@media (max-width:992px) {
+  .section-title p {
+    font-size: 1.9rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1107,10 +1115,8 @@ section {
 # Cause
 --------------------------------------------------------------*/
 
-#cause {
-  background: URL("https://images.unsplash.com/photo-1558974708-a164926a5a83?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
-  background-size: cover;
-  background-position: top;
+.cause {
+  background-image: URL("https://images.unsplash.com/photo-1558974708-a164926a5a83?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
   box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.75);
 }
 .cause .container {
@@ -1122,6 +1128,7 @@ section {
 .cause .section-title {
   padding-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1232,15 +1239,20 @@ section {
   justify-content: space-around;
 }
 
-.brand .member .pic img {
+.member .pic img {
   height: 20rem;
   width: 20rem;
   object-fit: cover;
   object-position: top;
 }
 .brand .member span {
-  padding: 1rem;
+  padding: 0 1rem;
 }
+.member h3 {
+  color: black;
+  font-size: 1.4rem;
+}
+
 
 /*--------------------------------------------------------------
 # Team
@@ -1279,16 +1291,19 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.member h4 {
+.member h4, .member h3 {
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 16px;
   color: black;
   position: relative;
   padding-bottom: 10px;
 }
 
-.member h4::after {
+.member h4 {
+  font-size: 16px;
+}
+
+.member h4::after, .member h3::after {
   content: '';
   position: absolute;
   display: block;
@@ -1300,7 +1315,6 @@ section {
 }
 
 .member span {
-  font-style: italic;
   display: block;
   font-size: 13px;
   color: black;
@@ -1322,6 +1336,12 @@ section {
 .team .member .social i {
   font-size: 16px;
   margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .img-fluid {
+    max-width: 70%;
+  }
 }
 
 /*--------------------------------------------------------------
