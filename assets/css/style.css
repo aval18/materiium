@@ -959,7 +959,7 @@ section {
     opacity: 0;
   }
 }
-@media (min-width:992px) {
+@media (max-width:992px) {
   .about img {
     max-width: 100%;
     height: auto;
@@ -1624,6 +1624,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 #signup .newsletter form {
@@ -1640,7 +1641,7 @@ section {
   width: 300px;
 }
 
-#signup .newsletter form input[type="submit"] {
+#signup .newsletter form input[type="submit"], .button {
   border: 0;
   font-size: 16px;
   padding: 10px 20px;
@@ -1648,9 +1649,13 @@ section {
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
+  font-weight: bold;
+}
+.newsletter a:hover {
+  color: #fff;
 }
 
-#signup .newsletter form input[type="submit"]:hover {
+#signup .newsletter form input[type="submit"]:hover .button:hover {
   background: #B7B7A4;
 }
 
