@@ -959,6 +959,12 @@ section {
     opacity: 0;
   }
 }
+@media (min-width:992px) {
+  .about img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /*--------------------------------------------------------------
 # Features
