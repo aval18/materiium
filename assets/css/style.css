@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #444444;
@@ -961,8 +965,9 @@ section {
 }
 @media (max-width:992px) {
   .about img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: contain;
   }
 }
 
@@ -1005,7 +1010,39 @@ section {
     width: 30%;
   }
 }
+/* Carousel
+.carousel {
+  display: none;
+}
 
+@media (max-width:992px) {
+  .gallery {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+
+  .carousel-inner>.item> img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem;
+  }
+  .carousel-control{
+    background-image: none;
+    text-shadow: none;
+  }
+  .glyphicon {
+    text-shadow: none;
+    color: black;
+  }
+  .carousel-inner .carousel-item {
+transition: -webkit-transform 2s ease;
+transition: transform 2s ease;
+transition: transform 2s ease, -webkit-transform 2s ease;
+}
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/

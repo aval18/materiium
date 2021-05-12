@@ -204,7 +204,7 @@
       mirror: false
     })
   });
-/* Typed */
+/* Typed
   if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
     typed_strings = typed_strings.split(',')
@@ -213,8 +213,46 @@
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 2000;
     });
-  }
+  }*/
+
+  // Activate Carousel
+  $(document).ready(function() {
+    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 2 seconds
+  });
+
+  $(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel1").carousel({interval: 8000});
+
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+      $("#myCarousel1").carousel(0);
+    });
+    $(".item2").click(function(){
+      $("#myCarousel1").carousel(1);
+    });
+    $(".item3").click(function(){
+      $("#myCarousel1").carousel(2);
+    });
+    $(".item4").click(function(){
+      $("#myCarousel1").carousel(3);
+    });
+    $(".item5").click(function(){
+      $("#myCarousel1").carousel(4);
+    });
+
+    // Enable Carousel Controls
+    $(".left").click(function(){
+      $("#myCarousel1").carousel("prev");
+    });
+    $(".right").click(function(){
+      $("#myCarousel1").carousel("next");
+    });
+  });
+
+
+
 
 })()
