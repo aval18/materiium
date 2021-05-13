@@ -171,6 +171,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  .mobile {
+    display: block;
+  }
+  .web {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -361,6 +373,10 @@ h1, h2, h3, h4, h5, h6 {
   .navbar ul {
     display: none;
   }
+  .navbar-mobile .button {
+    background: none;
+    color: black;
+  }
 }
 
 .navbar-mobile {
@@ -438,6 +454,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -970,6 +987,9 @@ section {
     width: auto;
     object-fit: contain;
   }
+  .about .py-5 {
+    padding-top: 0!important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1340,7 +1360,7 @@ transition: transform 2s ease, -webkit-transform 2s ease;
 }
 
 .team .member .member-info {
-  bottom: -60px;
+  bottom: -55px;
 }
 
 .member h4, .member h3 {
@@ -1688,6 +1708,10 @@ transition: transform 2s ease, -webkit-transform 2s ease;
   transition: 0.3s;
   border-radius: 50px;
   font-weight: bold;
+  font-family: 'Playfair Display';
+}
+a.button {
+  color: white;
 }
 .newsletter a:hover {
   color: #fff;
